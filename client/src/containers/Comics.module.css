@@ -1,0 +1,49 @@
+.title {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 1rem;
+}
+
+.comics_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comicsGrid {
+  align-items: center;
+  box-shadow: 0 5px 10px 5px #00000020;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  margin: 2rem;
+  min-width: 300px;
+  max-width: 1160px;
+  padding: 1rem;
+}
+
+.comicsList {
+  align-items: center;
+  box-shadow: 0 5px 10px 5px #00000020;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 1160px;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 650px) {
+  .comicsGrid {
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  .comicsList {
+    width: auto;
+    width: 80%;
+    max-width: 1160px;
+  }
+}
